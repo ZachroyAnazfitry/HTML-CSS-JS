@@ -7,3 +7,18 @@
     text-align: center;
 }
 /* end of page c1 */
+
+/* create h2 font type */
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* create .saye class color cyan */
+
+.saye {
+    color: cyan;
+}
+
