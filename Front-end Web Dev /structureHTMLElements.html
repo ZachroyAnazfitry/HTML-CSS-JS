@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Structural Elements</title>
+
+    <!-- add same styles for structural elemts -->
+    <style>
+        header,
+        nav,
+        article,
+        aside,
+        footer {
+          background: #659494;
+          border-radius: 5px;
+          color: white;
+          font-family: arial, sans-serif;
+          font-size: 30px;
+          text-align: center;
+          padding: 30px;
+          margin-bottom: 20px;
+        }
+        header:before,
+        nav:before,
+        article:before,
+        aside:before,
+        footer:before {
+          content: '<';
+        }
+        header:after,
+        nav:after,
+        article:after,
+        aside:after,
+        footer:after {
+          content: '>';
+        }
+        article {
+          float: left;
+          margin-right: 20px;
+          width: 60%;
+        }
+        aside {
+          float: left;
+          width: calc(40% - 140px);
+        }
+        footer {
+          clear: both;
+        }
+      </style>
+</head>
+<body>
+
+    <!-- 1st structural element -->
+    <header>This is header tag</header>
+    <!-- navbar -->
+    <nav>Nav</nav>
+    <!-- articel tag -->
+    <article>Article tag</article>
+    <!-- aside tag -->
+    <aside>Aside tag</aside>
+    <!-- footer tag -->
+    <footer>Footer tag</footer>
+    
+</body>
+</html>

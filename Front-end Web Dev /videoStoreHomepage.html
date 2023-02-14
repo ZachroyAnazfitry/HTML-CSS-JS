@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Store Homepage Wireframe</title>
+
+    <!-- add same styles for structural elemts -->
+    <style>
+        header,
+        nav,
+        article,
+        section,
+        footer {
+          background: #659494;
+          border-radius: 5px;
+          color: white;
+          font-family: arial, sans-serif;
+          font-size: 30px;
+          text-align: center;
+          padding: 30px;
+          margin-bottom: 20px;
+        }
+        header:before,
+        nav:before,
+        article:before,
+        aside:before,
+        section:before,
+        footer:before {
+          content: '<';
+        }
+        header:after,
+        nav:after,
+        article:after,
+        aside:after,
+        section:after,
+        footer:after {
+          content: '>';
+        }
+        article {
+          float: left;
+          margin-right: 20px;
+          width: 60%;
+        }
+        aside {
+          float: left;
+          width: calc(40% - 140px);
+        }
+        footer {
+          clear: both;
+        }
+      </style>
+
+      <!-- section -->
+      <style>
+        div{
+          float: left;
+          width: 25%;
+        }
+        section{
+          overflow: hidden;
+        }
+      </style>
+</head>
+<body>
+
+    <h1>Video Store Homepage Wireframe</h1>
+
+    <!-- 1st structural element -->
+    <header>This is header tag</header>
+    <!-- navbar -->
+    <nav>Nav</nav>
+    <!-- main content -->
+    <section>
+
+      <div>Product 1</div>
+      <div>Product 2</div>
+      <div>Product 3</div>
+      <div>Product 4</div>
+      <div>Product 5</div>
+      <div>Product 6</div>
+      <div>Product 7</div>
+      <div>Product 8</div>
+
+    </section>
+    <!-- footer tag -->
+    <footer>Footer tag</footer>
+    
+</body>
+</html>
