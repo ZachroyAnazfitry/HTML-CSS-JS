@@ -1,0 +1,21 @@
+    table{
+        width: 100%;
+    }
+    
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    thead{
+        text-align: center;
+        font-weight: bold;
+    }
+    tfoot{
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    th, td{
+        padding: 15px;
+    }
+
