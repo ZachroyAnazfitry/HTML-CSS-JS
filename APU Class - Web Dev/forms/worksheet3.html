@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worksheet 3</title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-body" style="border: 1px solid;">
+            <h1>A simple Form</h1>
+
+            <h3>Form Fundamentals</h3>
+
+            <section>
+
+                <div>
+                    <h2>Customer Info</h2>
+
+                    <form action="" method="post" id="regForm">
+
+                        <caption>Registration Form</caption>
+
+                        <fieldset >
+
+                            
+
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" placeholder="Enter your name" required>
+
+                            </div>
+
+                            <br>
+
+                            <div>
+                                <label for="phone">Telephone:</label>
+                                <input type="tel" name="phone" placeholder="Pattern 1-234-567-8910" required>
+                            </div>
+
+                            <br>
+                        
+                            <div>
+                                <label for="email">Email address:</label>
+                                <input type="email" name="email" placeholder="Enter your Email address" required>
+                            </div>
+
+                            <br>
+
+                            <!-- <button form="regForm">Submit</button> -->
+        
+                        </fieldset>
+
+                        <!-- second form -->
+                        <fieldset>
+
+                            <caption>Books</caption>
+
+                            <!-- create side by side input form -->                    
+
+                            <div style="display: flex;">
+                                <div>
+                                <label for="bookname">Books Name:</label>
+                                <!-- create select tag -->                                
+                                
+                                <select  name="bookname" id="bookname">
+                                  <option value="value1" selected disabled>Choose books</option>
+                                  <option value="value1">HTML5 Canvas by Steven</option>
+                                  <option value="value2">Javascript: The Definitive Guide</option>
+                                  <option value="value3">HTML5 Geolocation</option>
+                                </select>
+                                <!-- <input type="text" id="bookname" name="bookname"> -->
+                                </div>
+
+                                <br>
+
+                                <div>
+                                <label for="quantity">Quantity Maximum(5):</label>
+                                <input type="number" id="quantity" name="quantity" min="0" max="5">
+                                </div>
+                            </div>                
+                            
+                        </fieldset>
+
+                        <br>
+
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
+
+                    </form>
+            
+                </div>
+
+            </section>
+
+            <br><br>
+
+            <footer>@ 2011 Acme United</footer>
+        </div>
+
+        
+    </div>
+
+    
+    
+    
+</body>
+</html>
