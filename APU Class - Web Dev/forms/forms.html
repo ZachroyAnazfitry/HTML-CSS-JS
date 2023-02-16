@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSLAU Apparel</title>
+
+    <link rel="stylesheet" href="/APU Class - Web Dev/styleEx5.css">
+    <link rel="stylesheet" href="formStyle.css">
+
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+      <!-- create header -->    
+    
+    <header>
+      <!-- header content here -->
+      <!-- <h1><strong>HEADER</strong></h1> -->
+      <div>
+        <strong>CSLAU APPAREL INDUSTRIES</strong>    
+      </div>
+      
+    </header> 
+
+    <!-- create navbar -->    
+    <!-- remove <li> to make horizontal -->
+    <nav>
+      <ul>
+        <!-- relative path(recommended) -->
+        <!-- <a href="../APU Class - Web Dev/index.html">Relative path</a> -->
+        <!-- absolute path -->
+        <!-- <a href="/APU Class - Web Dev/absolute/absolute.html">Absolute Path</a> -->
+        <a href="/APU Class - Web Dev/apparelWireframe.html">Home</a>
+        <a href="../dealingWithImages/imagesNote.html">Dealing with Images</a>
+        <a href="/APU Class - Web Dev/creatingTables/createTable.html">Creating Table</a>
+        <a href="./forms.html">Creating Form</a>
+        <a href="#">New note</a>
+      </ul>
+    </nav>
+
+    <!-- create section -->   
+    <section style="float: left;">
+      
+        <h2>Dealing with Form (form tag)</h2>
+
+        <p>
+            * general method POST and GET <br>
+            * validation by Javascript <br>
+            * if button outside the form tag, refer button attribute form to the id of the above form <br>
+            * button attribute <br>
+                1. formaction <br>
+                2. formmethod <br>
+                3. formenctype - form encoded (for better security especially for credit card information) <br>
+            * fieldset tag better comes after form tag
+        </p>
+
+        <div>
+            <h2>Excercise 9</h2>
+
+            <form action="" method="post" id="regForm">
+                <fieldset>
+
+                    <caption>Registration Form</caption>
+
+                    <div>
+                        <label for="company">Company Name:</label>
+                        <input type="text" name="company" placeholder="Your Company" required>
+
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                    </div>
+
+                    <br>
+                   
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="address">Address</label>
+                        <textarea name="address" id="" cols="20" rows="5" placeholder="Your address">
+
+                        </textarea>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="uni">University:</label>
+                        <input type="uni" name="uni" placeholder="APU" disabled>
+                    </div>
+
+                    <br>
+
+                    <button form="regForm">Submit</button>
+ 
+                </fieldset>
+
+            </form>
+
+            <!-- <h3>Login form</h3> -->
+
+            <form action="" method="pos">
+                <fieldset>
+                    <table>
+                        <caption>Login form</caption>
+ 
+                        <tr>
+                         <td>Name:</td>
+                         <td>
+                             <input type="text" name="name" id="" required>
+                         </td>
+                        </tr>
+ 
+                        <tr>
+                         <td>Password:</td>
+                         <td>
+                             <input type="password" name="password" id="" required>
+                         </td>
+                        </tr>
+ 
+                        <tr>
+                         <td>Confirm Password:</td>
+                         <td>
+                             <input type="password" name="ccnfirm_password" id="" required>
+                         </td>
+                        </tr>
+ 
+ 
+                     </table>
+
+                     <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                    
+                </fieldset>
+   
+            </form> 
+            
+            <!-- another form -->
+            <form action="" method="post" id="regForm">
+                <fieldset>
+
+                    <caption>Testing Form</caption>
+
+                    <div>
+                        <label for="points">Points:</label>
+                        <input type="range" name="points" required>
+
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="search">Search:</label>
+                        <input type="search" name="" placeholder="Your search" required>
+                    </div>
+
+                    <br>
+                   
+                    <div>
+                        <label for="url">Url:</label>
+                        <input type="url" name="url" placeholder="Your url" required>
+                    </div>
+
+                    <br>
+
+                    <button form="regForm">Submit</button>
+ 
+                </fieldset>
+
+            </form>
+        </div>
+
+       
+
+
+
+
+
+    </section> 
+
+    <!-- create aside -->
+    <aside>
+
+      <h2>Sidebars</h2>
+      <!-- <strong>Aside</strong> -->
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, odit minus harum libero vero iusto.</p>
+    </aside>
+
+    <footer>
+      <p>Copyright @ CSLAU Apparel Industries</p>
+    </footer>
+    </div>
+    
+</body>
+</html>

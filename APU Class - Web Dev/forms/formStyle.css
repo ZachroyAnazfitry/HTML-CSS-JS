@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+  }
+  form {
+    display: inline-block;
+  }
+  table tr td {
+    height: 30px;
+  }
+  table > caption {
+    font-size: 25pt;
+  }
+  tfoot {
+    text-align: right;
+  }
+  input {
+    height: 20px;
+  }
