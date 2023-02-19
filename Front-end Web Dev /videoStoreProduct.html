@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Exercise</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* flex layout */
+        nav ul{
+            display: flex;
+            /* remove bullet */
+            list-style: none;
+        }
+
+        nav a{
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            /* separate the links */
+            padding: 15px;
+            /* remove underline */
+            text-decoration: none;
+
+        }
+
+        /* when mouse was moved to the link, it will underline it */
+        nav a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <ul>
+            <li><a href="">Videos to rent</a></li>
+            <li><a href="">Videos to buy</a></li>
+            <li><a href="">Used DVD</a></li>
+            <li><a href="">Offers</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

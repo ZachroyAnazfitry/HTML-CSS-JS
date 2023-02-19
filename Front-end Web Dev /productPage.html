@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+
+    <!-- styling -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        /* flex layout */
+        nav ul{
+            display: flex;
+            /* remove bullet */
+            list-style: none;
+        }
+
+        nav a{
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            /* separate the links */
+            padding: 15px;
+            /* remove underline */
+            text-decoration: none;
+
+        }
+
+        /* when mouse was moved to the link, it will underline it */
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        .breadcrumb{
+        /* flex layout */
+        display: flex;
+        /* remove default numbers */
+        list-style: none;
+        }
+
+    
+        /* also possible if using ol li{}, same result */
+        .breadcrumb li{
+            padding: 10px;
+        }
+
+        /* add forward slash */
+        .breadcrumb li::after{
+            content: '/';
+            /* separate pixels */
+            margin-left: 20px;
+        }
+
+        /* remove slash for last one */
+        .breadcrumb li:last-child::after{
+            content: '';
+        }
+
+        /* style anchor, a tag */
+        .breadcrumb a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover{
+            text-decoration: underline;
+        }
+
+        .product-card {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 15px;
+        }
+
+        .product-card img {
+            width: 100%;
+        }
+
+        .product-card h2 {
+            margin: 30px 0 15px;
+        }
+
+        .product-card a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .product-card p {
+            line-height: 1.5;
+        }
+
+        .original-price {
+            color: gray;
+            text-transform: uppercase;
+        }
+        .current-price span {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .saving {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+     <!-- navbar -->
+     <nav>
+        <ul>
+            <li><a href="">Videos to rent</a></li>
+            <li><a href="">Videos to buy</a></li>
+            <li><a href="">Used DVD</a></li>
+            <li><a href="">Offers</a></li>
+        </ul>
+    </nav>
+
+    <!-- breadcrumb -->
+    <section>
+        <ol class="breadcrumb">
+            <li><a href="">Home</a> </li>
+            <li><a href="">Used DVDs</a></li>
+            <li>Less than $10</li>
+        </ol>
+    </section>
+
+    <section>
+        <h1>Video less than  $10</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla fugit, eos quae et nisi totam maxime harum nesciunt minima debitis in. Repellendus distinctio animi consequatur libero ullam esse. Atque!
+        </p>
+    </section>
+
+
+    <div class="product-card">
+        <img src="https://dummyimage.com/300x300/7EC0EE/000&text=     Product+Image+1" alt="Product image 1" />
+         <h2><a href="">Video title 1</a></h2>
+         <p class="original-price">RRP: £18.99</p>
+         <p class="current-price">Price you pay <span>£9.99</span></p>
+         <p class="saving">Your saving £9</p>
+    </div>
+
+    <div class="product-card">
+        <img src="https://dummyimage.com/300x300/7EC0EE/000&text=     Product+Image+1" alt="Product image 1" />
+         <h2><a href="">Video title 2</a></h2>
+         <p class="original-price">RRP: £18.99</p>
+         <p class="current-price">Price you pay <span>£9.99</span></p>
+         <p class="saving">Your saving £9</p>
+    </div>
+
+    <div class="product-card">
+        <img src="https://dummyimage.com/300x300/7EC0EE/000&text=     Product+Image+1" alt="Product image 1" />
+         <h2><a href="">Video title 3</a></h2>
+         <p class="original-price">RRP: £18.99</p>
+         <p class="current-price">Price you pay <span>£9.99</span></p>
+         <p class="saving">Your saving £9</p>
+    </div>
+    
+</body>
+</html>
