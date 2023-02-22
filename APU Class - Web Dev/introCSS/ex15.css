@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    bottom: 0;
+}
+
+body > h1{
+    margin: 10px 30px 10px 20px;
+    background-color: yellow;
+    
+}
+
+h2,h3{
+    border: 2px dashed grey;
+    background-color: goldenrod;
+}
+
+p{
+    margin-left: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 3px 5px red;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+/* nesting element */
+p span{
+    color: #ccc;
+}

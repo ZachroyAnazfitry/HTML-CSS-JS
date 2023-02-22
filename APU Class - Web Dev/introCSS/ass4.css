@@ -1,0 +1,62 @@
+*{
+    margin: 10px;
+    padding: 0;
+    border: 3px solid green;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    /* background-color: #ccffff; */
+}
+
+h1{
+    color: red;
+    margin: 5px 0 0 0;
+    border: 20px dashed blueviolet;
+}
+
+#html{
+    border:2px dashed red;
+    /* margin: 10px 0 10px 0; */
+    margin: 10px auto;
+    width: fit-content;
+    /* make to center */    
+ 
+    
+}
+
+#python{
+    border:1px round blue;
+    margin: 10px 0 10px 0;
+
+}
+
+#js{
+    border:2px solid grey;
+    margin: 10px 0 10px 0;
+
+}
+
+p{
+    margin: 20px 10px 20px 10px;
+}
+
+div{
+    border: dashed black;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin: 10px 20px 0 20px;
+}
+
+.income{
+    background-color: grey;
+}
+
+.expenses{
+    background-color: red;
+}
+
+.profit{
+    background-color: yellow;
+}

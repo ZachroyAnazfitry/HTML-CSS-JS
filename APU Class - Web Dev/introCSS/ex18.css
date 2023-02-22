@@ -1,0 +1,29 @@
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background-color: #ccffff;
+}
+
+/* pseudo elements */
+p::first-letter{
+    font-size: 200%;
+}
+
+.income{
+    background-color: #cccc;
+}
+
+.expenses{
+    background-color: #ff0000;
+}
+
+.profit{
+    background-color: #ffff00;
+}
+
+#budgetsummary{
+    background-color: #ffffff;
+    border: 2px dotted;
+}

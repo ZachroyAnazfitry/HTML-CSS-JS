@@ -1,0 +1,27 @@
+h1{
+    text-transform: uppercase;
+    text-shadow: 3px 3px blue;
+}
+
+p{
+    background-color: #ccc;
+    letter-spacing: 2px;
+    line-height: 20px;
+    word-spacing: 15px;
+    text-indent: 50px;
+    justify-content: center;
+
+    /* ex17 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+p:hover{
+    white-space: normal;
+    /* overflow: visible; */
+}
+
+span{
+    text-decoration: underline;
+}
