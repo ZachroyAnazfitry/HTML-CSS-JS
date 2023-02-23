@@ -27,3 +27,13 @@ p::first-letter{
     background-color: #ffffff;
     border: 2px dotted;
 }
+
+@font-face {
+    font-family: "Jungle";
+    src: url('../introCSS/font/Jungledise\ Regular.ttf');
+}
+
+p{
+    font-family: "Jungle";
+    font-size: large;
+}
