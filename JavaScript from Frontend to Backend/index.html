@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="index.js"></script>
+    <title>Javascript</title>
+</head>
+<body>
+    
+    <!-- alert() function -->
+        <!-- <script>
+            alert("JS alert function")
+        </script> -->
+
+    <!-- console.log() method -->
+    <script>
+        console.log("try another method")
+    </script>
+
+    <!-- define variable -->
+    <script>
+        const cl = 10;
+        console.log(cl);
+        cl =13;
+        console.log(cl);
+
+    </script>
+
+<!-- example of using var -->
+    <script>
+        var a = 12;
+        var b = 56;
+        var c = a + b;
+        var s1 = "My name is ";
+        var firstname = "Bill";
+        console.log("a + b = " + a + b);  //concatenation, number already becomes string
+        console.log("c = " + c);
+        console.log(s1 + firstname);    
+  </script>
+
+
+<script>
+     var a = 12;  // defined outside means access everywhere
+      if (true) {  // always executed (because always true)
+        var b = 56;
+        let cc = 89;
+        console.log("In the brace:");
+        console.log("a = " + a);
+        console.log("b = " + b);
+        console.log("cc = " + cc);
+      }
+      console.log("After the brace:");
+      console.log("a = " + a);
+      console.log("b = " + b);
+      console.log("cc = " + cc);  // not defined because declaration of cc worked inside braces only
+</script>
+</body>
+</html>
