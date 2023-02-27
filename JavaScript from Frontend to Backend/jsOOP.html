@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript OOP</title>
+</head>
+<body>
+
+    <h1>Javascript OOP</h1>
+
+
+    <!-- defined class -->
+    <script>
+        class Person{
+
+            // add class properties
+            firstname = "zach";
+            lastname = "roy";
+            age = 0;
+
+            // constructor() method
+            constructor(firstname, lastname,age){
+                this.lastname = lastname;
+                this.firstname = firstname;
+                this.age = age;
+            }
+
+            // class methods
+            display(){
+                console.log("the person last name is :" +
+                this.lastname + ", firstname = " + this.firstname)
+            }
+
+        }
+
+        // class object
+        var p = new Person( "zach","roy");
+        console.log(p);
+        // call the class methods
+        p.display();
+
+    </script>
+
+    <!-- merging an object -->
+    <script>
+        var p = { lastname : "Clinton", firstname : "Bill" }
+        console.log("p (before modification of p2) =", p);
+        // var p2 = { ...p};// copy the properties of object p into 
+        // object p2
+        // p2.city = "Washington";
+        // shortened form
+        var p2 = { ...p, city : "Washington" };  
+        console.log("p (after modification of p2) =", p);
+        console.log("p2 =", p2);
+    </script>
+
+    <!-- arrays -->
+    <script>
+        // create an array
+        var arr = ['element 1', 'element 2', 'element 3'];
+        arr[10] = "element 9"; // add new array
+        console.log(arr)
+    </script>
+
+    <!-- Create array using array class and constructor() method -->
+    <script>
+        var tab = new Array("Element 1", "Element 2", "Element 3", "Element 4", "Element 5");
+        console.log(tab);
+        tab.forEach(function(elem,i){
+            console.log("tab[" + i + "]=", elem);
+        });
+    </script>
+
+    <!-- insert new array using push() method -->
+    <script>
+        var zac = ['element1', 'element2', 'element3'];
+        zac.push('element5');
+        delete zac[0]; // delete an array
+        console.log(zac)
+    </script>
+
+    <!-- delete array using splice() -->
+    <script>
+        var zac = ['element1', 'element2', 'element3'];
+        zac.splice(0,2)  // begin index, consecutive index
+        console.log(zac)
+    </script>
+
+<!-- filtering array with filter() -->
+<script>
+    // original array
+    var tab = ["Element 1", "Element 2", "Element 3", "Element 4", "Element 5"];
+    console.log("initial tab =", tab);
+    // keep only items with index >= 2
+    tab = tab.filter(function(element, index) {
+        if (index >= 2) return true;// keep this element
+    });
+    console.log("\nfinal tab =", tab);
+</script>
+
+<!-- filtering using map() -->
+<script>
+    // original array
+    var tab = ["Element 1", "Element 2", "Element 3", "Element 4", "Element 5"];
+    console.log("initial tab =", tab);
+    // capitalize all elements
+    tab = tab.map(function(element, index) {
+        return element.toUpperCase();
+    });
+    console.log("\nfinal tab =", tab);
+</script>
+
+    
+</body>
+</html>
