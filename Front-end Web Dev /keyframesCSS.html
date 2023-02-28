@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations Preloader</title>
+
+    <!-- keyframes style -->
+    <style>
+
+        *{
+            margin: 0 auto;
+        }
+
+        .preloader-wrapper{
+            height: 32px;
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: dodgerblue;
+        }
+
+        .preloader-bar{
+            background-color: darkgoldenrod;
+            height: 100%;
+            animation: preloader 5s ease-in-out 1s;
+        }
+
+        @keyframes preloader {
+            0% {width: 0;}
+            50% {width: 25%;}
+            100% {width: 50%;}    
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Keyframes Preloader</h1>
+
+    <div class="preloader-wrapper">
+        <div class="preloader-bar">
+
+        </div>
+    </div>
+
+    <div class="preloader-percentage">
+        <div class="preloader-value">0%</div>
+        <div class="preloader-value">25%</div>
+        <div class="preloader-value">100%</div>
+    </div>
+    
+</body>
+</html>
