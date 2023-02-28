@@ -111,6 +111,105 @@
     console.log("\nfinal tab =", tab);
 </script>
 
+<!-- create string using class -->
+<script>
+    var word = new String("Wow, idk.");
+    word.charAt(2);
+    console.log(word);
+    console.log(word.length);  // string property
+</script>
+
+<!-- slicing strings -->
+<script>
+    var s = "Hello";
+    console.log("s =", s);
+    console.log(`s.slice(0,2) = ${s.slice(0,2)}`);  // backtick
+    console.log(`s.slice(0,3) = ${s.slice(0,3)}`);
+    console.log(`s.slice(1,3) = ${s.slice(1,3)}`);
+    console.log(`s.slice(0,-1) = ${s.slice(0,-1)}`);
+    console.log(`s.slice(0,-2) = ${s.slice(0,-2)}`);
+    console.log(`s.slice(1,-2) = ${s.slice(1,-2)}`);
+</script>
+
+<!-- modifying string with match() -->
+<script>
+    var s = "Hello";
+    console.log("s =", s);
+    // search for "Hel"
+    console.log(`s.match(/Hel/) = ${s.match(/Hel/)}`);
+    // search for "hel"
+    console.log(`s.match(/hel/) = ${s.match(/hel/)}`);  
+    // search for "hel" ignoring upper/lower case
+    console.log(`s.match(/hel/i) = ${s.match(/hel/i)}`);
+    // search for H followed by a or b or e followed by l
+    console.log(`s.match(/H[abe]l/) = ${s.match(/H[abe]l/)}`);
+    // search for He followed by 0 or 1 a followed by l
+    console.log(`s.match(/Hea?l/) = ${s.match(/Hea?l/)}`);
+    // search for He followed by 0 (min) to 1 (max) followed by l
+    console.log(`s.match(/Hea{0,1}l/) = ${s.match(/Hea{0,1}l/)}`);
+    // search for He followed 1 (min) to 2 (max) followed by l
+    console.log(`s.match(/Hea{1,2}l/) = ${s.match(/Hea{1,2}l/)}`);
+</script>
+
+<!-- modifying string with replace() -->
+<script>
+    var s = "Hello";
+    console.log("s =", s);
+    // search for "Hel" and replace with "abc"
+    console.log(`s.replace(/Hel/, "abc") => ${s.replace(/Hel/, "abc")}`);
+    // search for "hel" and replace with "abc"
+    console.log(`s.replace(/hel/, "abc") => ${s.replace(/hel/, "abc")}`);  
+    // search for hel ignoring upper/lower case and replacing with 
+    // "abc"
+    console.log(`s.replace(/hel/i, "abc") => ${s.replace(/hel/i, "abc")}`);
+    // search for H followed by a or b or e followed by l and 
+    // replace with "abc"
+    console.log(`s.replace(/H[abe]l/, "abc") => ${s.replace(/H[abe]l/, "abc")}`);
+    // search for He followed by 0 or 1 a followed by l and 
+    // replaced by "abc"
+    console.log(`s.replace(/Hea?l/, "abc") => ${s.replace(/Hea?l/, 
+    "abc")}`);
+    // search for He followed by 0 (min) to 1 (max) followed by l 
+    // and replaced by "abc"
+    console.log(`s.replace(/Hea{0,1}l/, "abc") => ${s.replace(/Hea{0,1}l/, "abc")}`);
+    // search for He followed by 1 (min) to 2 (max) followed by l 
+    // and replaced by "abc"
+    console.log(`s.replace(/Hea{1,2}l/, "abc") => ${s.replace(/Hea{1,2}l/, "abc")}`);
+</script>
+
+<!-- multitasking with setTimeOut(callback) -->
+<script>
+    console.log("Before setTimeout()");
+    setTimeout(function() {
+    console.log("In the callback function");
+    }, 5000);// 5000 milliseconds, or 5 seconds
+    console.log("After setTimeout()");
+</script>
+
+<!-- multitasking with setInterval(callback) -->
+<script>
+    console.log(time(), "Start of timer");
+    var count = 1;
+    var timer = setInterval(function() {
+    console.log(time(), `count = ${count}`);
+    if (count == 5) {
+    clearInterval(timer);// timer stop
+    console.log(time(), "End of timer");
+    } else count++;
+    }, 1000);
+    function time() {
+    // return time as HH:MM:SS
+    var date = new Date();
+    var hour = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+    if (hour < 10) hour = "0" + hour;
+    if (min < 10) min = "0" + min;
+    if (sec < 10) sec = "0" + sec;
+    return "" + hour + ":" + min + ":" + sec + " ";
+    }
+</script>
+
     
 </body>
 </html>
