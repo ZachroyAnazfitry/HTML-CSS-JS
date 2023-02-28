@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        /* h1::first-letter{
+            text-transform: lowercase;
+        } */
+
+        h1:first-child{
+            color: red;
+            text-transform: lowercase;
+            text-align: center;
+        }
+
+        table{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        table td{
+            padding: 10px;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        .ex26{
+            /* margin: 20px 10px 20px 10px; */
+            padding: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <h1>Pseudo Elements</h1> -->
+
+    <section>
+        <h1>FIRST PARAGRAPH</h1>
+
+        <p>
+            <h3>Sub heading</h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, ut ullam! Earum quis temporibus eius fuga. Amet consequuntur inventore explicabo.</p>
+    </section>
+
+    <section class="ex26">
+        <h1>Exercise 26</h1>
+
+        <!-- create table with 3 columns and 5 rows -->        
+        <table>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+          <tr>
+            <td>Row 1</td>
+            <td>Row 1</td>
+            <td>Row 1</td>
+          </tr>
+          <tr>
+            <td>Row 2</td>
+            <td>Row 2</td>
+            <td>Row 2</td>
+          </tr>
+          <tr>
+            <td>Row 3</td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+          </tr>
+          <tr>
+            <td>Row 4</td>
+            <td>Row 4</td>
+            <td>Row 4</td>
+          </tr>
+          <tr>
+            <td>Row 5</td>
+            <td>Row 5</td>
+            <td>Row 5</td>
+          </tr>
+        </table>
+    </section>
+
+
+    
+</body>
+</html>

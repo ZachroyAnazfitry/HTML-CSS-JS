@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+            transform: rotate(20deg);
+            margin: 0 50px 0 10px;
+        }
+
+        div:hover{
+            width: 300px;
+        }
+
+        h1{
+            background-color: aqua;
+            transition: width 2s;
+            width: 0;
+        }
+
+        h1:hover{
+            width: 300px;
+        }
+
+        .other{
+            width: 100px;
+            height: 100px;
+            background: black;
+            transition: width 2s;
+            transform: skewY(20deg);
+            margin: 0 auto;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Transition Properties</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate libero cum architecto illo deleniti a sint similique, quis eligendi saepe.</p>
+
+    <div></div>
+
+    <div class="other"></div>
+    
+</body>
+</html>
