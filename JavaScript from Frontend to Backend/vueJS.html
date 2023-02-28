@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- old version -->
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <!-- latest version -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- <script src="counter.js"></script> -->
+
+    <title>Introduction to Vue JS</title>
+</head>
+<body>
+
+    <h1>Introduction to Vue JS</h1>
+
+    <div id="app">first div</div>
+
+    <div>This div not managed by Vue</div>
+
+    <span v-if="condition"></span>
+
+
+
+    <!-- <script>
+        // alert('Vue.version = ${Vue.version}');  # not working because of no backtick
+        alert(`Vue.version = ${Vue.version}`);
+    </script> -->
+
+    <!-- create app with Vue -->
+    <!-- <script>
+        var app = Vue.createApp({
+            // options parameter, template option
+            template: "The counter is: {{count}}", // parse the object into template
+
+            // adding reactive variable
+            data() {
+                return {
+                    // object
+                    count:0
+                }
+            },
+        });
+
+        // mount app on the div with id
+        var vm = app.mount("div#app");  // element parameter, div
+
+        // incrementing variable count to non-stop
+        setInterval(function(){
+            vm.count += 1; 10
+        });
+    </script> -->
+
+    <!-- from external file -->
+    <script type="module">
+    
+        import Counter from "./counter.js";
+        
+        var app = Vue.createApp({
+        components : {
+            Counter:Counter
+        },
+        template : "<counter />"   // or "<Counter />"
+        });
+    
+        var vm = app.mount("div#app");
+        
+    </script>
+
+
+    
+</body>
+</html>
