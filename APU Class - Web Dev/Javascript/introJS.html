@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Javascript</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+
+
+    <h2>Exercise 29</h2>
+
+    <div>
+        <button class="btn btn-primary" style="size: 100px;background-color: red;" onclick="window.alert('welcome')"> Alert</button>
+        <button class="btn btn-primary" style="size: 100px; background-color: lightblue;" onclick="window.confirm('Press a key')"> Confirm</button>
+        <button class="btn btn-primary" style="size: 100px; background-color: green;" onclick="window.prompt('Enter your name')"> Prompt</button>
+
+        <!-- applying function -->
+        <button class="btn btn-primary" style="size: 100px; background-color: aqua;" onclick="confirmMessageBox()"> Clickla</button>
+        <button class="btn btn-primary" style="size: 100px; background-color: peachpuff;" onclick="promptMessageBox()"> Message</button>
+    </div>
+
+
+    <h2>Exercise 30</h2>
+
+    <div>
+        <label for="">Enter the numbers</label>
+        <input type="number" name="number" id="number" min="0" onclick="enterNumber()">
+    </div>
+
+    <br>
+
+
+
+    <script>
+
+        // convert celcius temperature into fahrenheit 
+        var c = 20
+        var fahrenheit = 50
+        var f = (c * 9/5) + 32
+        var r = (fahrenheit - 32) * 5/9
+        console.log("Convert 20 degree Celcius to Fahrenheit = ",f + 'F');
+        console.log("Convert 50 degree Fahrenheit to Celcius = ",r + 'C');
+
+        document.write("Convert 20 degree celcius to Fahrenheit = ",f + 'F');
+        // document.write("Convert 20 degree Fahrenheit to celcius = ",r);
+    </script>
+
+    <!-- applying function -->
+    <script>
+
+        function confirmMessageBox() {
+
+            let opt = window.confirm('Do you want to continue?');
+
+            if (opt) {
+                alert('OK');
+            } else {
+                alert('Cancel')
+            }
+            
+        }
+
+        // console.log(confirmMessageBox);
+    </script>
+
+    <script>
+        function promptMessageBox() {
+            let name = prompt('Enter your name');
+            alert(`How are you doing, ${name}?`);
+            
+        }
+    </script>
+    
+</body>
+</html>
