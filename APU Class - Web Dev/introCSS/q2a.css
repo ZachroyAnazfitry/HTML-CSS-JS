@@ -1,0 +1,123 @@
+/* body{
+    border: 2px solid black;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+#thumbnails{
+    background-color: red;
+    text-align: right;
+    padding: 10px 20px 10px 20px;
+}
+
+#searchbar > input{
+    background-color: aqua;
+    float: right;
+    border-top: 20px;
+}
+
+#searchicon{
+    text-align: right;
+
+}
+
+#link{
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+ */
+
+
+ * {
+    border: 1px solid;
+    margin: 5px;
+  }
+  header {
+    border-color: red;
+    overflow: hidden;
+    position: relative;
+  }
+  #logo {
+    background: url("../html5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 200px;
+    border-style: dashed;
+    float: left;
+  }
+  #thumbnails {
+    border-color: blue;
+    border-style: dashed;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    overflow: hidden;
+  }
+  #thumnails img {
+    float: right;
+    width: 35;
+    height: 35;
+  }
+  #searchbar {
+    border-color: green;
+    border-style: dashed;
+    width: 220px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+  }
+  #searchbar #searchicon {
+    float: left;
+    height: 20px;
+    width: 20px;
+  }
+  #searchicon {
+    background-image: url("../search.png");
+    background-size: cover;
+  }
+  #searchbar input {
+    height: 20px;
+    float: left;
+  }
+  nav {
+    clear: left;
+    padding: 3px;
+  }
+  nav #link {
+    overflow: hidden;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  nav div a {
+    padding: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  
+  section {
+    border-color: orange;
+    overflow: hidden;
+  }
+  section #banner {
+  }
+  #left,
+  #center,
+  #right {
+    width: 32%;
+    height: 200px;
+    float: left;
+  }
+  footer {
+    text-align: center;
+    font-style: italic;
+  }
