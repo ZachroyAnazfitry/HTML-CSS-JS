@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+
+    <section>
+        <h1>Variables - Constant</h1>
+        <div class="var">
+            <p class="var-text">
+                Can never be changed
+            </p>
+        </div>
+        <br>
+        <h1>Variables - Array</h1>
+        <div class="var">
+            <p class="var-text">
+                To hold multiple values <br>
+                to check datatype - use typeof()
+            </p>
+        </div>
+    </section>
+    
+    <script>
+        const appName = "project1";
+        console.log(appName);
+    </script>
+
+    <!-- example of array -->
+    <script>
+        // const N=5;
+        // let arrInt = [];
+
+        // // prompt 5 integers
+        // // arrInt[0] = prompt('Enter number');
+        // arrInt[0] = parseInt(prompt('Enter number'));
+        // arrInt[1] = parseInt(prompt('Enter number'));
+        // arrInt[2] = parseInt(prompt('Enter number'));
+        // arrInt[3] = parseInt(prompt('Enter number'));
+        // arrInt[4] = parseInt(prompt('Enter number'));
+        // arrInt[5] = parseInt(prompt('Enter number'));
+
+        // // compute sume of arr
+        // let sum=0;
+        // sum += arrInt[0];
+        // sum += arrInt[1];
+        // sum += arrInt[2];
+        // sum += arrInt[3];
+        // sum += arrInt[4];
+        // sum += arrInt[5];
+
+        // console.log("Sum =",sum);
+
+    </script>
+
+    <!-- switch -->
+    <script>
+        let day = new Date().getDay();
+
+        switch (day) {
+            case 0:
+                console.log('Sunday');
+                break;  // to stop matching value
+            case 1:
+                console.log('Tuesday');
+                break;
+        
+            // no matching value will be default case
+            default:
+                console.log('invalid day');
+                break;
+        }
+
+    </script>
+
+<!-- ex 30 -->
+<script>
+    const N=5;
+    let arrInt = [];
+
+    // prompt 5 integers
+    for (let i = 0; i < N; i++) {
+       arrInt[i] = parseInt(prompt('Enter number'));     
+    }
+
+    // compute sume of arr
+   let sum = 0;
+    for (index in arrInt) {
+        sum += arrInt[index];     
+    }
+    // console.log("Sum =",sum);
+    alert(`Sum is ${sum}`);
+
+</script>
+
+</body>
+</html>
