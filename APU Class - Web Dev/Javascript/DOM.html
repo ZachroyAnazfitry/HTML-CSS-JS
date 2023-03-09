@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOMs</title>
+</head>
+<body>
+    <h1>Javascript Document Object Models(DOMs)</h1>
+
+    <h3>Circle radius</h3>
+    <button onclick="circleArea(9);">Show the result</button>
+    <p id="result"></p>
+
+    <h3>Exercise 34</h3>
+    <!-- div had event registered -->
+    <div id="container">
+        <!-- bubbling from buton events -->
+        <button>Click me!</button>
+    </div>
+    <pre id="output"></pre>
+    
+<!-- user defined function -->
+    <script>
+
+        function circleArea(radius) {
+            // let area = 3.142 * 3 * 3;
+            let circleArea = (Math.PI * Math.pow(radius,2)).toFixed(2);
+            // return area;
+            document.getElementById("result").innerText = `Area is: ${circleArea}`;
+        }
+     
+        // let result = document.getElementById("result").innerText;
+        
+    </script>
+
+    <!-- function as value -->
+   <script>
+     const a = function(radius){
+        let circleArea = (Math.PI * Math.pow(radius,2)).toFixed(2);
+        document.getElementById("result").innerText = `Area is: ${circleArea}`;
+    }
+   </script>
+
+   <!-- exercise 34 -->
+   <script>
+        // let btn = document.querySelector("button");
+        // function clickMe(event) {
+        //     document.getElementById("output").innerText = `You have clicked ${clickMe}`;
+        // }
+
+        // btn.onclick = clickMe
+
+        // correct answer
+        const pre = document.querySelector("#output");
+        function clickMe(event) {
+            pre.textContent += `You have clicked on a ${event.currentTarget.tagName} element.\n`;
+        }
+
+        const container = document.querySelector("#container");
+        container.addEventListener("click", clickMe);
+
+        document.querySelector("button").addEventListener("click", function (event) {
+            pre.textContent += `You have clicked on a ${event.currentTarget.tagName} element.\n`;
+            event.stopPropagation();
+            
+        })
+   </script>
+</body>
+</html>
