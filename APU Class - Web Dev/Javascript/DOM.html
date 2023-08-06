@@ -9,8 +9,10 @@
 <body>
     <h1>Javascript Document Object Models(DOMs)</h1>
 
-    <h3>Circle radius</h3>
-    <button onclick="circleArea(9);">Show the result</button>
+    <h3>Exercise 33: Circle radius</h3>
+    <input type="number" id="calc">
+    <button onclick="a();">Show the result</button>
+    <!-- <button onclick="a(5);">Show the result</button> -->
     <p id="result"></p>
 
     <h3>Exercise 34</h3>
@@ -20,6 +22,10 @@
         <button>Click me!</button>
     </div>
     <pre id="output"></pre>
+
+    <h3>Exercise 35: Recalculate Circle radius</h3>
+    <button onclick="eh(-5);">Show the result of values</button>
+    <p id="result"></p>
     
 <!-- user defined function -->
     <script>
@@ -37,7 +43,13 @@
 
     <!-- function as value -->
    <script>
-     const a = function(radius){
+     const a = function(){
+
+        // user enter input
+        
+        event.preventDefault;    // Prevent the default form submission behavior
+        var radius = Number(document.querySelector("#calc").value);    // Get the value of the input field with ID "calc" and convert it to a number
+
         let circleArea = (Math.PI * Math.pow(radius,2)).toFixed(2);
         document.getElementById("result").innerText = `Area is: ${circleArea}`;
     }
@@ -67,5 +79,28 @@
             
         })
    </script>
+
+   <!-- exercise 35 -->
+   <script>
+   
+        const eh = function(radius){
+
+            try {
+                if (radius < 0) {
+                    throw "not allowed";
+                }
+                let circleArea = (Math.PI * Math.pow(radius,2)).toFixed(2);
+                document.getElementById("result").innerText = `Area is: ${circleArea}`;
+            } catch (error) {
+                alert(error);
+            } finally{
+                console.log("complete");
+            }
+           
+         }
+        
+  </script>
+
+  <!-- create function calculate radius with user input -->
 </body>
 </html>
